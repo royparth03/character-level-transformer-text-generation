@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a lightweight transformer-based language model (similar to GPT) trained on Shakespeare text. The model generates human-like text using self-attention mechanisms.
+Based on Andrej Karpathy's "Let's build GPT" lecture, scaled down (2 layers, 4 heads, 64-dim embeddings, 48-character context, ~0.11M parameters) so it trains on a laptop CPU. This project implements a lightweight transformer-based language model (similar to GPT) trained on Shakespeare text. The model generates human-like text using self-attention mechanisms.
 
 ## Features
 
@@ -13,7 +13,7 @@ This project implements a lightweight transformer-based language model (similar 
 
 ## Project Structure
 
-- bigram.py: Model implementation and training
+- gpt.py: Model implementation and training
 - input.txt: Training dataset (Shakespeare text)
 - output.txt: Generated text samples
 - requirements.txt: Dependencies
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 2. Run the model:
 
-python bigram.py
+python gpt.py
 
 ## Results
 

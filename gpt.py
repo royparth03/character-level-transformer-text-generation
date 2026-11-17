@@ -6,7 +6,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 # hyperparameters
 batch_size = 16        # ↓ from 64 (huge speedup)
 block_size = 48       # ↓ from 256 (less memory + faster)
-max_iters = 5000       # ↓ from 5000
+max_iters = 5000
 eval_interval = 200    # less frequent evaluation
 learning_rate = 1e-3   # slightly higher for faster convergence
 eval_iters = 50        # ↓ from 200
@@ -21,7 +21,7 @@ dropout = 0.1          # ↓ from 0.2 (faster + ok for small model)
 torch.manual_seed(1337)
 
 # wget https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
-with open(r'D:\Acads\scmac\ng-video-lecture-master\ng-video-lecture-master\input.txt', 'r', encoding='utf-8') as f:
+with open('input.txt', 'r', encoding='utf-8') as f:
 
     text = f.read()
 
